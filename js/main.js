@@ -126,12 +126,12 @@
   var slider = document.getElementById('price-slider');
   if (slider) {
     noUiSlider.create(slider, {
-      start: [1, 999],
+      start: [10, 9999],
       connect: true,
       tooltips: [true, true],
       format: {
         to: function(value) {
-          return value.toFixed(2) + '$';
+          return value.toFixed(2) + 'DZD';
         },
         from: function(value) {
           return value
